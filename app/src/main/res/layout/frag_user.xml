@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/bg_gray"
+              android:orientation="vertical">
+
+    <include layout="@layout/include_myselfbar"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@color/transparent"/>
+
+
+    <LinearLayout
+        android:id="@+id/ll_userinfo"
+        android:layout_width="match_parent"
+        android:layout_height="88dp"
+        android:background="@drawable/ll_customer_selector"
+        android:clickable="true"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_avatar"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_gravity="center_vertical"
+            android:scaleType="centerCrop"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/ren"/>
+
+        <RelativeLayout
+            android:id="@+id/rl_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="15dp"
+            android:paddingTop="15dp">
+
+            <TextView
+                android:id="@+id/tv_subhead"
+                style="@style/TextViewSubhead"
+                />
+
+            <TextView
+                android:id="@+id/tv_caption"
+                style="@style/TextViewCaption"
+                android:layout_below="@id/tv_subhead"
+                android:layout_marginTop="8dp"
+                android:text="点击编辑详细资料"
+                android:textColor="@color/txt_gray"/>
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/rightarrow"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3px"
+        android:background="@color/divider_gray"/>
+    
+    <LinearLayout
+        android:id="@+id/user_ask_layout"
+        android:background="@drawable/ll_customer_selector"
+        android:onClick="onClick"
+        android:clickable="true"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/tiwen"/>
+
+        <TextView
+            android:text="我的问题"
+            style="@style/TextViewSubhead"
+            android:layout_marginLeft="16dp"/>
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3px"
+        android:background="@color/divider_gray"/>
+
+    <LinearLayout
+        android:id="@+id/user_answer_layout"
+        android:background="@drawable/ll_customer_selector"
+        android:clickable="true"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/huida"/>
+
+        <TextView
+            android:text="我的回答"
+            style="@style/TextViewSubhead"
+            android:layout_marginLeft="16dp"/>
+
+    </LinearLayout>
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3px"
+        android:background="@color/divider_gray"/>
+
+    <LinearLayout
+        android:id="@+id/user_collection_layout"
+        android:background="@drawable/ll_customer_selector"
+        android:clickable="true"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/shoucang"/>
+
+        <TextView
+            android:text="我的收藏"
+            style="@style/TextViewSubhead"
+            android:layout_marginLeft="16dp"/>
+
+    </LinearLayout>
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3px"
+        android:background="@color/divider_gray"/>
+
+    <LinearLayout
+        android:id="@+id/user_fen_layout"
+        android:background="@drawable/ll_customer_selector"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/jifen"/>
+
+        <TextView
+            android:text="我的积分"
+            style="@style/TextViewSubhead"
+            android:layout_marginLeft="16dp"
+            android:layout_weight="1"/>
+
+
+        <TextView
+            android:text="0"
+            style="@style/TextViewSubhead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3px"
+        android:background="@color/divider_gray"/>
+</LinearLayout>

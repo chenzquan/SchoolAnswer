@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:padding="15dp"
+        android:layout_height="68dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+
+        <ImageView
+            android:id="@+id/ask_fanhui"
+            android:layout_margin="5dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/leftwrow"
+            android:layout_width="25dp"
+            android:layout_height="25dp"/>
+
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"/>
+
+
+        <ImageView
+            android:id="@+id/iv_shoucang_bottom"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/xingxing"
+            android:layout_toLeftOf="@+id/iv_share_bottom"
+            android:layout_marginRight="15dp"/>
+
+
+        <ImageView
+            android:id="@+id/iv_share_bottom"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/share"/>
+    </RelativeLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cv_click"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="8dp"
+    android:layout_marginEnd="8dp"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="8dp"
+    android:background="@drawable/ll_customer_selector"
+    android:clickable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="2dp"
+    app:contentPadding="8dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/iv_avatar"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:scaleType="centerCrop"
+
+                android:src="@drawable/ren"/>
+
+            <TextView
+                android:id="@+id/user_account"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/iv_avatar"
+                android:text="窗外的贝多芬"/>
+
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="2018-01-03"
+                />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="据《死亡九分钟》作者乔治·里奇的亲身经历，人在濒临死亡之时回脑海中会出现许多幻象，然后会诡异地回忆起你一生经历过的所有事，它们会像电影镜头那样在你的脑中重播一遍。
+
+然后有人据此找到了一种通过期末考试超级学习法，具体做法是在考前一周把各种学科重点拼命背，没日没夜拼尽全力地背，背到天昏地暗，背到世界尽头。。
+
+就在你觉得背得快要死了的时候上考场，这时你会惊奇地发现，你之前背过的书就像放幻灯片一样在大脑中诡异地一页页地再现，然后你只要挑出其中与题目相关的部分果断抄下，就这么又一次有惊无险地通过了考试。
+"/>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+
+        </RelativeLayout>
+
+
+        <include layout="@layout/pinglun_bottom"/>
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>

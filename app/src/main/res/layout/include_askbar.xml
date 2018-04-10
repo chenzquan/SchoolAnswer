@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:paddingLeft="10dp"
+        android:layout_height="68dp">
+
+    <TextView
+        android:layout_gravity="center_vertical"
+        android:textColor="@color/txt_black"
+        android:layout_margin="20dp"
+        android:text="提问"
+        android:textSize="17sp"
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+        <Button
+            android:id="@+id/tijiao"
+            android:textSize="17sp"
+            android:text="提交"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@drawable/txtcolor_yellow2yellowdar"
+            android:background="@color/transparent"
+            android:layout_gravity="center_vertical"/>
+</LinearLayout>
+

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/yellow"
+    android:layout_height="68dp">
+
+    <LinearLayout
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_height="48dp">
+
+        <ImageView
+            android:layout_margin="5dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/search"
+            android:layout_width="20dp"
+            android:layout_height="20dp"/>
+
+        <EditText
+            android:id="@+id/search_et"
+            android:textCursorDrawable="@drawable/cursor_color"
+            android:background="@null"
+            android:layout_gravity="center_vertical"
+            android:hint="大学必备秘籍"
+            android:textSize="17sp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="42dp"/>
+
+
+        <View
+            android:layout_width="3px"
+            android:layout_height="28dp"
+            android:background="@color/txt_black"
+            android:layout_gravity="center_vertical"/>
+
+        <Button
+            android:textSize="17sp"
+            android:id="@+id/Academic"
+            android:text="学术问"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_tran2gray_sel"/>
+    </LinearLayout>
+
+</LinearLayout>
